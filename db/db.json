@@ -1,5 +1,4 @@
-{
-  "notes": [
+[
     {
       "title": "Test Title",
       "text": "Test text"
@@ -18,6 +17,40 @@
       "title": "Test Title2",
       "text": 44,
       "id": "3"
+    },
+    {
+      "title": "ff",
+      "text": "ff",
+      "id": "4"
+    },
+    {
+      "title": "qq",
+      "text": "qq",
+      "id": "5"
+    },
+    {
+      "title": "11",
+      "text": "11",
+      "id": "6"
+    },
+    {
+      "title": "11111",
+      "text": "111",
+      "id": "7"
+    },
+    {
+      "title": "oooo",
+      "text": "oooo",
+      "id": "8"
+    },
+    {
+      "title": "oo",
+      "text": "ooooooooooooo",
+      "id": "9"
+    },
+    {
+      "title": "44",
+      "text": "44",
+      "id": "10"
     }
   ]
-}

@@ -1,30 +1,25 @@
 const router = require('express').Router();
-const {findById, createNewNote, validateNote} = require('../../lib/notes');
-const {notes} = require('../../db/db');
+const {findById, previewAllNotes, createNewNote} = require('../../lib/notes');
+const notes = require('../../db/db.json');
 
 
-router.get('/notes/:id', (req,res) => {
-    const result = findById(req.params.id, notes);
-    if (result) {
-        res.json(result);
-    } else {
-        res.send(404);
-    }
+router.get('/notes', (req,res) => {
+ 
+  return previewAllNotes (notes);
 });
 
 router.post('/notes', (req,res) => {
     // setting an id based on the index 
     // of the array of the notes just incase we want
     // to indetify note by note
+    // let notes = JSON.parse(fs.readFileSync('./db/db.json'));
+    // let noteArr = notes.notes
     req.body.id = notes.length.toString();
     // add note to json file and notes array in this function
-    if (!validateNote(req.body)){
-        res.status(400).send('The note is not properly formatted. Please try again!');
-    } else { 
-        const note = createNewNote(req.body,notes);
+        const newNote = createNewNote(req.body,notes);
         console.log(req.body);
-        res.json(note);
-    }
+       return res.json(newNote);
+    
 });
 
 module.exports = router;
