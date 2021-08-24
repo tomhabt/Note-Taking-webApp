@@ -18,23 +18,22 @@ router.post('/notes', (req,res) => {
         const newNote = createNewNote(req.body);
         console.log(req.body);
        return res.json(newNote);
-    
 });
 
 // DELETE any note  for the  client 
 router.delete('/notes/:id', (req,res) => {
-//creates variable from file to delete
-    let deleteNote = req.params.id;
     //creates variable from db.json file
     let notesObj = JSON.parse(fs.readFileSync(path.join(__dirname,'../../db/db.json')));
     console.log(notesObj);
     //removes/filters deleteFile from notes
-    let newNotesArr = notesObj.allNotes.filter(note => note.id !== deleteNote);
-    console.log(newNotesArr);
+    let allNotes = notesObj.allNotes.filter(note => note.id !== req.params.id);
+    console.log(allNotes);
+    // let allNotesObj = {allNotes}
+   
     //write notes variable to db.json file
-    fs.writeFileSync(__dirname, '../../db/db.json', JSON.stringify(newNotesArr));
+    fs.writeFileSync('./db/db.json', JSON.stringify({allNotes},null, 2));
     //return notes to client
-    return res.json(newNotesArr);
+    return res.json(allNotes);
 });
 
 module.exports = router;

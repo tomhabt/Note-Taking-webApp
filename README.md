@@ -22,23 +22,26 @@ THEN I am presented with empty fields to enter a new note title and the note’s
   https://github.com/tomhabt/Note-Taking-webApp
 
   ## Description
-  A Express database that stores notes to cient side usage and enables to retrieve and track schedules.
-  
+  A Express database that stores notes to cient side for usage and enables to retrieve and track schedules with enable to delete notes or edit them.
   
   ## Methods
-  The following methods were used to run the application properly: **FS,Inquirer,jest, Express JS, Node**.
+  The following methods were used to run the application properly: **FS,Express JS, Node JS**.
    
   ## Installation
-  The following necessary dependencies must be installed to run the application properly: **NPM, Inquirer, Express, jest**.
+  The following necessary dependencies must be installed to run the application properly: **NPM, path, Express**.
+
   ## Usage
-  In order to use this app, run "**nmp start**" and use the local host port provided.
+  In order to use this app, run "**nmp start**" and use the local host port provided on your machine.
    
   
   ## Technologies 
   The following technologies being used: **ES6,Express, Node**.
+
   ## Website
   https://github.com/tomhabt/Note-Taking-webApp.git
+
   ## Contribution
   Made with ❤️ by Thomas Habtemariam.
+  
   ## Questions
   If you have any questions about the repo, open an issue or contact **tomhabt** directly at : thomas.habtemariam@gmail.com
