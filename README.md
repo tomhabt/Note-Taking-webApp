@@ -38,7 +38,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
   The following technologies being used: **ES6,Express, Node**.
 
   ## Website
-  https://github.com/tomhabt/Note-Taking-webApp.git
+  https://tomhabt.github.io/Note-Taking-webApp/
 
   ## Contribution
   Made with ❤️ by Thomas Habtemariam.
