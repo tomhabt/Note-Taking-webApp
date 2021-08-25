@@ -13,9 +13,10 @@ router.get('/notes', (req,res) => {
 // POST new note insertion from client and save it in the server
 router.post('/notes', (req,res) => {
     // setting an id based on the index of the array of the notes just incase we want to indetify note by note
-    req.body.id = allNotes.length.toString();
+    let notesObj = JSON.parse(fs.readFileSync(path.join(__dirname,'../../db/db.json')));
+    req.body.id = notesObj.allNotes.length.toString();
     // add note to json file and notes array in this function
-        const newNote = createNewNote(req.body);
+        const newNote = createNewNote(req.body,allNotes);
         console.log(req.body);
        return res.json(newNote);
 });
