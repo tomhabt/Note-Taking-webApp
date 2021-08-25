@@ -1,3 +1,19 @@
 {
-  "allNotes": []
+  "allNotes": [
+    {
+      "title": "Clean Master bedroom",
+      "text": "Vacuum the closet",
+      "id": "0"
+    },
+    {
+      "title": "Scrub the bath tub",
+      "text": "use VIM",
+      "id": "1"
+    },
+    {
+      "title": "Pay Bills",
+      "text": "hydro is overdue",
+      "id": "2"
+    }
+  ]
 }
