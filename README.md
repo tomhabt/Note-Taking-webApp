@@ -18,6 +18,9 @@ THEN that note appears in the right-hand column
 WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 
+## Website
+  https://boiling-sands-57616.herokuapp.com/
+
 # Repositroy address
   https://github.com/tomhabt/Note-Taking-webApp
 
@@ -31,14 +34,14 @@ THEN I am presented with empty fields to enter a new note title and the note’s
   The following necessary dependencies must be installed to run the application properly: **NPM, path, Express**.
 
   ## Usage
-  In order to use this app, run "**nmp start**" and use the local host port provided on your machine.
+  In order to use this app, run "**nmp start**" and use the local host port provided on your machine if you cloned the repository or simply use the website provided to use the app.
    
   
   ## Technologies 
   The following technologies being used: **ES6,Express, Node**.
 
   ## Website
-  https://github.com/tomhabt/Note-Taking-webApp.git
+  https://boiling-sands-57616.herokuapp.com/
 
   ## Contribution
   Made with ❤️ by Thomas Habtemariam.
